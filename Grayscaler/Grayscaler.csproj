@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="grayscaler.ico" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="grayscaler.ico" />
   </ItemGroup>
 
 </Project>

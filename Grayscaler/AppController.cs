@@ -40,7 +40,8 @@ namespace Grayscaler
 
             _tray = new NotifyIcon
             {
-                Icon = new System.Drawing.Icon(System.IO.Path.Combine(System.AppContext.BaseDirectory, "grayscaler.ico")),
+                Icon = new System.Drawing.Icon(
+                    typeof(AppController).Assembly.GetManifestResourceStream("Grayscaler.grayscaler.ico")),
                 Visible = true,
                 Text = "Grayscaler — right-click for options",
                 ContextMenuStrip = menu

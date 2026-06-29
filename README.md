@@ -12,12 +12,13 @@ You pick a target window by clicking on it, and the app draws a gray overlay on 
 
 It hosts a native `Magnifier` control (Windows Magnification API) configured with a grayscale color matrix. The overlay recaptures the target window's region on every tick and repaints it in gray, staying just above the target in the z-order without being global topmost.
 
-## Usage
+## Download
 
-```powershell
-cd Grayscaler
-dotnet run
-```
+Grab the latest `Grayscaler-vX.Y.Z-win-x64.zip` from the
+[Releases](https://github.com/perereus/Grayscaler/releases) page, unzip, and run
+`Grayscaler.exe`. It's a self-contained build — no .NET installation required.
+
+## Usage
 
 The app lives in the system tray (no main window). Right-click the tray icon:
 
@@ -25,9 +26,13 @@ The app lives in the system tray (no main window). Right-click the tray icon:
 - **Enable / Disable grayscale** — toggle the effect
 - **Exit**
 
-## Requirements
+## Build from source
 
-- Windows
-- .NET 8 SDK
+```powershell
+cd Grayscaler
+dotnet run
+```
+
+Requirements: Windows and the .NET 8 SDK.
 
 It is Windows-specific: it relies on P/Invoke to `user32.dll` and the Magnification API (`Magnification.dll`).
