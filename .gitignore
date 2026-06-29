@@ -1,0 +1,6 @@
+bin/
+obj/
+.claude/
+*.tmp
+Grayscaler/out.txt
+Grayscaler/err.txt
